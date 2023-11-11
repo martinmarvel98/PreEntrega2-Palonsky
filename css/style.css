@@ -13,13 +13,14 @@
     background: rgb(178, 21, 21);
     color: white;
     border: 5px solid black;
+    font-family: 'Cinzel Decorative', serif;
+
 }
 
-.SWComic{
-    width: 350px;
-    height: 450px;
-    border: 5px solid black;
-    margin-right: 10px;
+.swcomics{
+    min-width: 380px;
+    height: 500px;
+    border: 3px solid black;
 }
 
 .texto{
@@ -30,13 +31,21 @@
     box-sizing: border-box;
     font-family: 'Besley', serif;
     margin-right: 20px;
+    text-align: center;
+    height: 500px;
+    overflow: scroll;
 }
 
 .subtitulo2{
+    width: 100%;
     text-align: center;
     color: white;
     font-family: 'Cinzel Decorative', serif;
     font-size: 40px;
+}
+
+.extra{
+    display: flex;
 }
 
 /* fotos */
@@ -154,8 +163,8 @@ ul.menu{
 }
 
 div.main{
-    display: flex;
     background-color: rgb(178, 21, 21);
+    padding: 15px;
 }
 
 /* forma de la fuente */
@@ -305,17 +314,15 @@ h2{
 /* Contacto */
 
 .swinthemom{
-    width: 50%;
+    width: 500px;
     height: auto;
-    display: inline-block;
 }
 .contacto{
     background-color: rgb(178, 21, 21);
     color: white;
     font-size: 40px;
     font-family: 'Besley', serif;
-    width: 50%;
-    display: inline-block;
+    width: 500px;
 }
 
 .swinthemom, .contacto{
