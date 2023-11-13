@@ -136,7 +136,7 @@ ul.menu a:active{
     border-radius: 3px;
 }
 
-nav.menu{
+.container{
 	width: 100%;
 }
 
@@ -223,7 +223,6 @@ h2{
 
 .cards{
     width: 400px;
-    height: 400px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -300,7 +299,6 @@ h2{
     box-sizing: border-box;
     display: block;
     margin: auto;
-
 }
 .footer_{
     background: black;
@@ -331,40 +329,112 @@ h2{
 
 /* media queries */
 
-@media (max-width: 430px){
+@media screen and (max-width: 550px) {
     ul.menu{
-        width: 100%; background-color: black;
+        flex-direction: column;
+        align-items: center;
+        height: 120px;
     }
-}
-
-@media (max-width: 430px){
-    .nav label{
+    ul.menu li{
+        padding: 0;
+        border: 2px solid white;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        font-size: 17px;
+        background: black;
+    }
+    .titulo{
+        font-size: 30px !important;
+    }
+    .subtitulo{
+        font-size: 20px !important;
+    }
+    .extra{
         display: block;
     }
-    ul.menu{
-        display: none;
+    .extra img.swcomics {
+        min-width: 300px !important;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    #check_menu:checked~ul.menu{
-        background: rgb(178, 21, 21);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 60px;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
+    .swinthemom{
+        width: 320px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
+    .contacto{
+        background-color: rgb(178, 21, 21);
+        color: white;
+        font-size: 20px;
+        font-family: 'Besley', serif;
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .contacto textarea{
+        width: 90%;
+        height: 150px;
+    }
     .miembros2{
         grid-template-columns: 1fr;
     }
+    .video{
+        width: 90%;
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid black;
+    }
+    .footer_{
+        background: black;
+        color: white;
+        font-size: 20px;
+        margin-left: auto;
+        text-align: center;
+        font-family: 'Cinzel Decorative', serif;
+    }
+    .footer{
+        width: 200px;
+        height: 200px;
+        background: black;
+        padding: 20px;
+        box-sizing: border-box;
+        display: block;
+        margin: auto;
+    }
+    .comics2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .comics{
+        width: 140px;
+        height: 220px;
+        border: 5px solid black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ucm2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);        
+        gap: 15px;
+    }
+    .ucm{
+        width: 140px;
+        height: 220px;
+        border: 5px solid black;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-/* menu mobile */
-#check_menu, nav label{
-    display: none;
-}
-/* header */
+
+
+
